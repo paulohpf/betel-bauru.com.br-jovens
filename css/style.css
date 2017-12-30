@@ -1,0 +1,499 @@
+
+@font-face {
+  font-family: 'AmazingGrotesk';
+  src: url('../fonts/AmazingGrotesk/AmazingGrotesk.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AmazingGrotesk/AmazingGrotesk.woff') format('woff'),
+    url('../fonts/AmazingGrotesk/AmazingGrotesk.ttf')  format('truetype'),
+    url('../fonts/AmazingGrotesk/AmazingGrotesk.svg#AmazingGrotesk') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'blackjackregular';
+  src: url('../fonts/BlackJar/blackjar-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BlackJar/blackjar-webfont.woff') format('woff'),
+    url('../fonts/BlackJar/blackjar-webfont.ttf')  format('truetype'),
+    url('../fonts/BlackJar/blackjar-webfont.svg#blackjar-webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    font-family: 'AmazingGrotesk', serif;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background: #fff;
+    top: 20px;
+    border-radius: 50%;
+    left: 20px;
+    z-index: 99999;
+    overflow: hidden;	
+}
+
+.logo:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 35px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #101010;
+    top: 0px;
+}
+
+.logo .avatar{
+    background: url('../images/beteljea.png') no-repeat center center;
+	width: 70px;
+    height: 100%;
+    position: relative;
+    top: 5px;
+    background-size: 100%;
+    display: block;
+    left: 16px;
+}
+
+.navbar-default {
+    background-color: #101010;
+    border-color: transparent;
+    display: none;
+}
+
+.nav.navbar-nav{
+    float: right;
+}
+
+.navbar-default .navbar-nav>li>a{
+    font-size: 20px;
+    color: #ecf0f1;
+}
+
+
+    .dotnav-right {
+        right: 10px;
+        top: 50%;
+        margin-top: -50px;
+        height: 100px;
+        z-index: 999;
+        position: fixed;
+    }
+
+    .dotnav {
+        padding: 0;
+        list-style: none;
+        font-size: 0.001px;
+    }
+
+    .dotnav > li {
+        display: inline-block;
+        font-size: 1rem;
+        vertical-align: top;
+    }
+    .dotnav > li:nth-child(n+2) {
+        margin-left: 15px;
+    }
+
+    .dotnav > li > a {
+        display: inline-block;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid #66ccff;
+        vertical-align: top;
+        overflow: hidden;
+        padding: 0;
+        text-indent: -999%;
+    }
+    .dotnav > li > a:hover,
+    .dotnav > li > a:focus {
+        background: #66ccff;
+        outline: none;
+    }
+    .dotnav > li > a:active {
+        background: #66ccff;
+    }
+    .dotnav > li.active > a {
+        background: #66ccff;
+    }
+    .dotnav-vertical > li {
+        display: block;
+        margin-right:10px;
+    }
+    .dotnav-vertical > li:nth-child(n+2) {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .awesome-tooltip + .tooltip > .tooltip-inner {
+        background-color: #66ccff; 
+	        color: #fff; 
+        border: 1px solid #66ccff; 
+    }
+    .awesome-tooltip + .tooltip.left > .tooltip-arrow{
+        top:50%;
+        right:0;
+        margin-top:-5px;
+        border-top:5px solid transparent;
+        border-bottom:5px solid transparent;
+        border-left:5px solid #66ccff;
+    }
+
+    /*Adaptação do menu Bootstrap ao menu lateral*/
+
+    .navbar {
+        position: absolute;
+    }    
+
+    .navbar-nav>li{
+        float: none;
+    }
+
+.topic{
+	width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+
+header:before{
+    background: url('../images/header1.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -3;       
+}
+
+section.valores:before{
+    background: url('../images/bg2.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -3;
+}
+
+section.estrategias:before{
+	background: url('../images/estrategias-bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -3;
+
+}
+
+section.contato:before{
+	background: url('../images/contato-bg.jpeg') no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -3;
+}
+
+h3.sectiontitle{
+    text-align: center;
+    font-weight: bold;	
+}
+
+.content{
+    margin:0 auto;
+    max-width: 1170px;
+    clear: both;
+    overflow: hidden;    
+}
+
+.topic.home .container{
+    padding-top: 25vh;
+    text-align: center;
+    color: #fff;
+}
+
+.topic.home .container h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.topic.home .container .social{
+    max-width: 40vh;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.topic.home .container .social a{
+    color: #101010;
+    border: 1px solid #101010;
+    border-radius: 70px;
+    text-decoration: none;
+    padding: 13px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: #fff;
+}
+
+.topic.home .container .social a + a{
+    margin-left: 40px;
+}
+
+.topic.sobre{
+	min-height: 30vh;
+}
+
+.topic.valores{
+	min-height: 70vh;	
+}
+
+.topic.estrategias{
+	position: relative;
+}
+
+.topic.estrategias .container .blockLeft div + div, .topic.estrategias .container .blockRight div + div, .topic.valores .container .blockRight div + div{
+	margin-top: 50px;
+}
+
+.topic.valores .container h3.sectiontitle, .topic.estrategias .container h3.sectiontitle, .topic.home .container h1{
+    text-shadow: 0 0 6px #101010;
+    color: #fff;    
+}
+
+.topic.valores .container h4, .topic.estrategias .container h4, .topic.sobre .container h4{
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.topic.valores .container h4, .topic.estrategias .container h4, .topic.contato .container .camposobrigatorios{
+    text-shadow: 0 0 4px #000000;
+    color: #fff;
+}
+
+.topic.contato .container label{
+    display: none;
+}
+
+.topic.contato .container .camposobrigatorios h4{
+    font-size: 14px;
+}
+
+.topic.contato{
+	min-height: 90vh;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #000;
+    border-color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-primary:active:hover, .btn-primary:hover{
+    color: #fff;
+    background-color: #252525;
+    border-color: #fff;
+    opacity: .8;
+}
+
+.alert{
+    display: none;
+}
+
+    .google-maps {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        width: 438px;
+        height: 368px;                
+    }
+    .google-maps iframe {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+span.obrigatorio{
+    color: red;
+    margin-right: 5px;
+}
+
+.topic.contato h3.sectiontitle{
+    text-shadow: 0 0 4px #000;
+    color: #fff;
+}
+
+footer{
+	min-height: 10vh;
+	background: #101010;
+	position: relative;
+    width: 100%;
+    overflow: hidden;    
+}
+
+footer .ibb_footer{
+    margin-left: 20px;    
+}
+
+footer .ibb_footer a{
+    text-decoration: none;
+}
+
+footer .ibb_footer a span{
+    color: #fff;
+    font-family: "blackjackregular";
+    font-size: 50px;
+}
+
+footer .social{
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+footer .social a{
+    color: #fff;
+    font-size: 40px;
+    margin-left: 15px;    
+}
+
+.container{
+    color: #000;
+    padding-top: 10vh;
+}
+
+.blockLeft, .inputBlockDouble .camposobrigatorios{
+	float: left;
+}
+
+.inputBlockDouble{
+    width: 100%;
+}
+
+.topic.estrategias .blockLeft, .topic.valores .blockLeft{
+	width: 450px;
+}
+
+.blockRight, .inputBlockDouble .btn{
+	float: right;
+}
+
+.topic.estrategias .blockRight, .topic.valores .blockRight{
+	width: 450px;	
+}
+
+.inputBlock{
+	margin: 5px;
+}
+
+@media screen and (max-width: 420px) {
+
+    h4{
+        font-size: 14px;
+    }
+
+    .topic.valores .container h4, .topic.estrategias .container h4, .topic.sobre .container h4{
+
+    }
+
+    /*Logo*/
+
+    .logo{
+        width: 60px;
+        height: 60px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .logo:before{
+        left: 20px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid #101010;        
+    }
+
+    .logo .avatar{
+        width: 45px;
+        top: 3px;
+        left: 8px;
+    }
+
+    /*Backgrounds*/ 
+
+    body{
+        height:100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }     
+
+    header:before, section.valores:before, section.estrategias:before, section.contato:before{
+        background-attachment: initial !important;
+        overflow: hidden;
+    }
+
+    .topic.home .container .social a + a{
+        margin-left: 10px;
+    }    
+
+    .blockLeft, .blockRight{
+        float: none;
+        width: 97% !important;
+        text-align: center !important;
+        clear: both;        
+    }
+
+    .nav.navbar-nav{
+        float: none;
+    }
+
+    .valores .container{
+        padding-top: 10vh;
+    }    
+
+    /*Footer*/
+
+    footer .ibb_footer{
+        margin-left: auto;
+    }
+
+    footer .ibb_footer span{
+        font-size: 30px !important;
+    }
+
+}
